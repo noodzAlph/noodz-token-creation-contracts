@@ -1,0 +1,34 @@
+{
+  "fullNodeVersion": "v2.11.1",
+  "compilerOptionsUsed": {
+    "ignoreUnusedConstantsWarnings": false,
+    "ignoreUnusedVariablesWarnings": false,
+    "ignoreUnusedFieldsWarnings": false,
+    "ignoreUnusedPrivateFunctionsWarnings": false,
+    "ignoreUpdateFieldsCheckWarnings": false,
+    "ignoreCheckExternalCallerWarnings": false
+  },
+  "infos": {
+    "DeployNewToken": {
+      "sourceFile": "scripts.ral",
+      "sourceCodeHash": "637e28f0464d19946fe8b8f6f85d64638b3a03fc5aa71db85c18dde1b3f3f947",
+      "bytecodeDebugPatch": "",
+      "codeHashDebug": "",
+      "warnings": []
+    },
+    "IFungibleToken": {
+      "sourceFile": "../../../../../.npm/_npx/f1b120e1b513c04c/node_modules/@alephium/web3/std/fungible_token_interface.ral",
+      "sourceCodeHash": "6809cb06fb20fa7edf529461998beeebd12b1636d439612cca2f84214dbf4a20",
+      "bytecodeDebugPatch": "",
+      "codeHashDebug": "",
+      "warnings": []
+    },
+    "SimpleToken": {
+      "sourceFile": "token.ral",
+      "sourceCodeHash": "f4eb3103f156a7bdf88000e885384ddc083cb99a6d5eb5c978c36d47a6f6c908",
+      "bytecodeDebugPatch": "",
+      "codeHashDebug": "a2800413eb2c5c23d48068db23df5f8eeaba04653e12c8ed59d589720d96dadd",
+      "warnings": []
+    }
+  }
+}

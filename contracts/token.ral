@@ -1,0 +1,28 @@
+import "std/fungible_token_interface"
+
+Contract SimpleToken(
+    symbol: ByteVec,
+    name: ByteVec,
+    decimals: U256,
+    supply: U256
+) implements IFungibleToken {
+
+    // A public function that returns the symbol of the token.
+    pub fn getSymbol() -> ByteVec {
+        return symbol
+    }
+
+    // A public function that returns the name of the token.
+    pub fn getName() -> ByteVec {
+        return name
+    }
+
+    // A public function that returns the decimals of the token.
+    pub fn getDecimals() -> U256 {
+        return decimals
+    }
+
+    pub fn getTotalSupply() -> U256 {
+        return supply
+    }
+}

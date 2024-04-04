@@ -1,0 +1,16 @@
+
+TxScript DeployNewToken(templateId: ByteVec, name: ByteVec, symbol: ByteVec, decimals: U256, initialSupply: U256, uiFee: U256) {
+
+    let owner = callerAddress!()
+
+    if(uiFee > 0){
+        let recipient = @1GS2iVjkqYovP98owEbJci1RjT9U4Ftk7uoYp9kmGpuv2
+        transferToken!{owner -> ALPH: uiFee}(owner, recipient, ALPH, uiFee)
+    }
+
+
+    let (immFields, mutFields) = SimpleToken.encodeFields!(symbol, name, decimals, initialSupply)
+    let contractCreationALPH = 1 alph
+
+    let _ = copyCreateContractWithToken!{ owner -> ALPH: contractCreationALPH + dustAmount!() }(templateId, immFields, mutFields, initialSupply, owner)
+}
